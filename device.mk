@@ -20,8 +20,8 @@ $(call inherit-product, device/amazon/bowser-common/common.mk)
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_FOLDER)/overlay
 
-PRODUCT_AAPT_CONFIG := normal large tvdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
+PRODUCT_AAPT_CONFIG := normal large hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Rootfs
 PRODUCT_COPY_FILES += \
