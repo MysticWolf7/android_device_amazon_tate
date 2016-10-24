@@ -31,6 +31,12 @@ TARGET_GCC_VERSION_ARM := 4.8
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-$(TARGET_GCC_VERSION_ARM)/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
+TOUCH_MODULES:		
+ 	mkdir -p $(OUT)/recovery/root/vendor/firmware/		
+ 	cp $(KERNEL_MODULES_OUT)/atmel_mxt_ts.ko $(OUT)/recovery/root/vendor/firmware/		
+ 		
+ TARGET_KERNEL_MODULES += TOUCH_MODULES		
+ 
 # OTA Packaging / Bootimg creation
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_FOLDER)/boot.mk
