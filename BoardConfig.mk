@@ -31,12 +31,6 @@ TARGET_GCC_VERSION_ARM := 4.8
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-$(TARGET_GCC_VERSION_ARM)/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
-TOUCH_MODULES:
-        mkdir -p $(OUT)/recovery/root/vendor/firmware/
-        cp $(KERNEL_MODULES_OUT)/atmel_mxt_ts.ko $(OUT)/recovery/root/vendor/firmware/
-
- TARGET_KERNEL_MODULES += TOUCH_MODULES
-
 # External SGX Module
 SGX_MODULES:
 	make clean -C $(HARDWARE_TI_OMAP4_BASE)/pvr-source/eurasiacon/build/linux2/omap4430_android
