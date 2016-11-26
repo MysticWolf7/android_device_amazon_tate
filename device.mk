@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += \
 # Device settings
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.sf.lcd_density=213 \
+    ro.sf.hwrotation=270 \
     persist.hwc.mirroring.region=0:0:800:1280 \
     persist.hwc.mirroring.transform=3 \
     omap.audio.mic.main=DMic0L \
