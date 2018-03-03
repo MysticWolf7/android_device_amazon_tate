@@ -1,4 +1,5 @@
 # Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_FOLDER)/overlay
 PRODUCT_AAPT_CONFIG := normal large hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-# Rootfs
+# Ramdisk
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/fstab.tate:/root/fstab.bowser \
     $(DEVICE_FOLDER)/init.bowser.rc:root/init.bowser.rc \
