@@ -23,11 +23,11 @@
 #
 
 # Bins
-bin/brcm_patchram_plus
-bin/provision_device
-bin/provisioning_client
-bin/start_smc.sh
-bin/atmel_touch.sh
+bin/brcm_patchram_plus:vendor/bin/brcm_patchram_plus
+bin/provision_device:vendor/bin/provision_device
+bin/provisioning_client:vendor/bin/provisioning_client
+bin/start_smc.sh:vendor/bin/start_smc.sh
+bin/atmel_touch.sh:vendor/bin/atmel_touch.sh
 
 # Firmware
 vendor/firmware/ducati-m3.bin
@@ -98,4 +98,3 @@ vendor/camera/R01_MVEN002_LD0_ND0_IR0_SH0_FL0_SVEN002_DCCID46/cid44_OV9726_ldc_c
 vendor/camera/R01_MVEN002_LD0_ND0_IR0_SH0_FL0_SVEN002_DCCID46/cid44_OV9726_lsc_interp.bin
 vendor/camera/R01_MVEN002_LD0_ND0_IR0_SH0_FL0_SVEN002_DCCID46/cid44_OV9726_vnf_cfg_dcc.bin
 vendor/camera/R01_MVEN002_LD0_ND0_IR0_SH0_FL0_SVEN002_DCCID46/cid65535_kgen_dcc_preflash.bin
-
