@@ -23,11 +23,11 @@
 #
 
 # Bins
-bin/brcm_patchram_plus:vendor/bin/brcm_patchram_plus
-bin/provision_device:vendor/bin/provision_device
-bin/provisioning_client:vendor/bin/provisioning_client
-bin/start_smc.sh:vendor/bin/start_smc.sh
-bin/atmel_touch.sh:vendor/bin/atmel_touch.sh
+bin/brcm_patchram_plus
+bin/provision_device
+bin/provisioning_client
+bin/start_smc.sh
+bin/atmel_touch.sh
 
 # Firmware
 vendor/firmware/ducati-m3.bin

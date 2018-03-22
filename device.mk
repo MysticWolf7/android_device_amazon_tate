@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/ueventd.bowser.rc:root/ueventd.bowser.rc
 
 # Device settings
-ADDITIONAL_BUILD_PROPERTIES += \
+PROPERTY_PRODUCT_OVERRIDES += \
     ro.sf.lcd_density=213 \
     persist.hwc.mirroring.region=0:0:800:1280 \
     persist.hwc.mirroring.transform=3 \
@@ -47,18 +47,18 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.cwm.forbid_format=/bootloader,/xloader,/misc
 
 # Set dirty regions off
-ADDITIONAL_BUILD_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     hwui.render_dirty_regions=false
     
 # RIL turn off
-ADDITIONAL_BUILD_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=1 \
     ro.radio.use-ppp=no \
     ro.config.nocheckin=yes \
     ro.radio.noril=yes
 
 # wifi-only device
-ADDITIONAL_BUILD_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
 
 $(call inherit-product-if-exists, vendor/amazon/tate/tate-vendor.mk)

@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration for bowser
 $(call inherit-product, device/amazon/tate/full_tate.mk)
