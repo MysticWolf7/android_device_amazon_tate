@@ -28,7 +28,7 @@ TARGET_BOARD_OMAP_CPU := 4460
 TARGET_KERNEL_SOURCE := kernel/amazon/bowser-common
 TARGET_KERNEL_VARIANT_CONFIG := android_tate_defconfig
 BOARD_KERNEL_CMDLINE := mem=1G androidboot.hardware=bowser console=ttyO2,115200n8 androidboot.console=ttyO2 androidboot.selinux=permissive
-KERNEL_TOOLCHAIN_PREFIX := arm_linux_androideabi-
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
 
 # External SGX Module
