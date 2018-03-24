@@ -6,10 +6,11 @@
   {
     "repository": "android_kernel_amazon_bowser-common",
     "target_path": "kernel/amazon/bowser-common"
-  }
+  },
   {
     "repository": "android_hardware_ti_omap4",
     "target_path": "hardware/ti/omap4"
+  }
 ]
 
 

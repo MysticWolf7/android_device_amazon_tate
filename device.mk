@@ -26,11 +26,11 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(DEVICE_FOLDER)/fstab.tate:/root/fstab.bowser \
-    $(DEVICE_FOLDER)/init.bowser.rc:root/init.bowser.rc \
-    $(DEVICE_FOLDER)/init.bowser.usb.rc:root/init.bowser.usb.rc \
-    $(DEVICE_FOLDER)/init.recovery.bowser.rc:root/init.recovery.bowser.rc \
-    $(DEVICE_FOLDER)/ueventd.bowser.rc:root/ueventd.bowser.rc
+    $(DEVICE_FOLDER)/ramdisk/fstab.tate:/root/fstab.bowser \
+    $(DEVICE_FOLDER)/ramdisk/init.bowser.rc:root/init.bowser.rc \
+    $(DEVICE_FOLDER)/ramdisk/init.bowser.usb.rc:root/init.bowser.usb.rc \
+    $(DEVICE_FOLDER)/ramdisk/init.recovery.bowser.rc:root/init.recovery.bowser.rc \
+    $(DEVICE_FOLDER)/ramdisk/ueventd.bowser.rc:root/ueventd.bowser.rc
 
 # Device settings
 PROPERTY_PRODUCT_OVERRIDES += \
@@ -62,4 +62,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
 
 $(call inherit-product-if-exists, vendor/amazon/tate/tate-vendor.mk)
-$(call inherit-product-if-exists, vendor/amazon/omap4-common/omap4-common-vendor-540_120.mk)
+#$(call inherit-product-if-exists, vendor/amazon/omap4-common/omap4-common-vendor-540_120.mk)
